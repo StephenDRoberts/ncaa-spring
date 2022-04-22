@@ -1,0 +1,15 @@
+database:
+  host: jdbc:mysql://${database.ip}:8000
+  ip: localhost
+  name: teamConferences
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: notroot
+    url: ${database.host}/${database.name}?UseUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+  output:
+    ansi:
+      enabled: ALWAYS
+

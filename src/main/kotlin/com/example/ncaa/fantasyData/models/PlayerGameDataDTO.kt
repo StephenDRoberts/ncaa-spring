@@ -1,0 +1,31 @@
+package com.example.ncaa.fantasyData.models
+
+data class PlayerGameDataDTO(
+    val rank: Short,
+    val playerId: String,
+    val playerName: String,
+    val team: String,
+    val position: String,
+    val week: Byte,
+    val opponent: String,
+    val passingCompletions: Short = 0,
+    val passingAttempts: Short = 0,
+    val passingCompletionPercentage: Float = 0.0F,
+    val passingYards: Short = 0,
+    val passingYardsPerAttempt: Float = 0.0F,
+    val passingTouchdowns: Short = 0,
+    val passingInterceptions: Short = 0,
+    val passingRating: Float = 0.0F,
+    val rushingAttempts: Short = 0,
+    val rushingYards: Short = 0,
+    val rushingYardsPerAttempt: Float = 0.0F,
+    val rushingTouchdowns: Short = 0,
+    val receptions: Short = 0,
+    val receivingYards: Short = 0,
+    val receivingTouchdowns: Short = 0,
+    val receivingLong: Short = 0,
+    val receivingYardsPerReception: Float = 0.0F,
+    val fumbles: Byte = 0,
+    val fumblesLost: Byte = 0,
+    val fantasyPoints: Float
+)
